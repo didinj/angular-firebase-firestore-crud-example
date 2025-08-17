@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Boards</h2>
+  <button routerLink="/add" class="btn btn-primary">Add Board</button>
+  <ul class="list-group mt-3">
+    <li
+      *ngFor="let board of boards$ | async"
+      class="list-group-item d-flex justify-content-between align-items-center"
+    >
+      <span>
+        <strong>{{ board.title }}</strong> - {{ board.description }}
+      </span>
+      <span>
+        <button [routerLink]="['/edit', board.id]" class="btn btn-sm btn-warning me-2">Edit</button>
+        <button (click)="deleteBoard(board.id!)" class="btn btn-sm btn-danger">Delete</button>
+      </span>
+    </li>
+  </ul>
+</div>

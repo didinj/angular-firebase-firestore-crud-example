@@ -1,0 +1,25 @@
+@if(board) {
+<div class="container">
+  <h2>Edit Board</h2>
+  <form (ngSubmit)="updateBoard()">
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input [(ngModel)]="board.title" name="title" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Description</label>
+      <textarea
+        [(ngModel)]="board.description"
+        name="description"
+        class="form-control"
+        required
+      ></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Author</label>
+      <input [(ngModel)]="board.author" name="author" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>
+}
