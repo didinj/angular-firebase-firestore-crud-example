@@ -1,6 +1,6 @@
 # Angular 20 Firebase Tutorial: Build a Firestore CRUD Web App with Standalone Components
 
-Read the full tutorial [here]().
+Read the full tutorial [here](https://www.djamware.com/post/5bbf534580aca7466989441c/angular-20-firebase-tutorial-build-a-firestore-crud-web-app-with-standalone-components).
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
 
